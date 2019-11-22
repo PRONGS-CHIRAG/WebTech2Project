@@ -1,0 +1,147 @@
+﻿<html>
+<head>
+    <title> Customer Reviews </title>
+    <style>
+        #div {
+            background-color: "green";
+            font-family: "verdana";
+            border: 5px solid #c3c3c3;
+            /*height: 70%; */
+            width: 100%;
+        }
+    </style>
+
+    <script>
+			xhr=new XMLHttpRequest();
+			scrollAmt=100;
+			count=0;
+			function getChunk(){
+				scroll=document.body.scrollTop||document.documentElement.scrollTop;
+				if(scroll>scrollAmt){
+					scrollAmt=scroll;
+					var newDiv = document.createElement("div");
+					xhr.onreadystatechange=showChunk;
+					xhr.open("GET","getChunk.php?count="+count++,true);
+					xhr.send();
+				}
+			}
+			function showChunk(){
+			console.log(xhr.status)
+				if(xhr.readyState==4 && xhr.status==200){
+				console.log("hello");
+				//var newDiv = document.createElement("div");
+				//newDiv.appendChild(newContent);
+				//var newDiv = document.createElement("div");
+				//newDiv.innerHTML+=xhr.responseText;
+				document.getElementById("div").innerHTML+=xhr.responseText;
+				//document.getElementById("content").innerHTML+=xhr.responseText;
+				//document.getElementById("content").style.font = "italic bold 20px verdana,serif";
+				//var content = document.getElementById("content");
+				//var newDiv = document.createElement("div");
+				//newDiv.appendChild("content");
+				document.getElementById("content").style.color = "white";
+				//var currentDiv = document.getElementById("div1");
+  				//document.body.insertBefore(newDiv, currentDiv);
+  				//var z = document.createElement('p');
+  				//z.innerHTML= xhr.responseText;
+  				//var newDiv = document.createElement("div");
+  				//newDiv.appendChild("z");
+
+
+
+				}
+
+
+			}
+			window.onscroll=getChunk;
+    </script>
+</head>
+<body background="background.jpg">
+    <h2 style="color:white;"> CUSTOMER REVIEWS</h2>
+    <div id="div" style="background-color:lightblue">
+        <p id="content">
+
+            =============================================================================================================
+
+            Surya Chandra
+            5.0 out of 5 stars:Best in class QLED/OLED TV in it's price range
+            10 March 2019
+            Firstly, the picture quality is WoW! It's the same as OLED TV of LG or Sony. However those are much more costlier when compared to Samsung.
+            Samsung is terming QLED is better than OLED with respect to pixel burning issue, but I can't comment on that.
+            QLED/OLED is the latest technology (CRT, LCD, LED we're earlier generations). Since it's still upcoming technology, the price is slightly high.
+            Refresh rate of 120Hz is pretty good, sound is decently good in this model.
+            However I bought this TV in a shop where I got it at 1.26lakhs and 0 EMI in Bangalore. It's costlier online.
+            Ambience mode is a new feature and it's good.
+            Finally, if you can afford to buy a QLED/OLED then this is cheapest one you can get in market. Value for money.
+
+            =============================================================================================================
+
+            2.0 out of 5 starsDon't buy Samsung led, buy Sony it's worth not expensive.
+            11 March 2019
+            Picture quality is good,but not excellent,picture on front of TV is ok but side view is so bad,if any one plan buy a led below 1.50L, buy only Sony 55x9000f which is first full array led with local dimming, live experience in life,wow picture,wow details and you talk to your TV,with personal Google assistant,Sony picture processer is too good,Samsung TV quality is so bad.X9000F is under 1.22L
+
+            =============================================================================================================
+
+            Shikhar Anand
+            5.0 out of 5 starsAwesome picture quality. Worth the price!!!
+            16 July 2019
+            I bought this tv from a samsung store in Mar'19 as they sold it to me for 1.07 lacs including all cashbacks and samsung points. The picture quality is amazing for a tv in this range. You need to see it in person to believe this. The 4K videos along with 120 Hz refresh rate look amazing. All colours look sharper on the screen. Also this tv has a 10 year warranty for burning. My last samsung got it in within 4 year and it was also a led tv. All apps like youtube, netflix, prime, hotstar are already present and you just need to login to your accounts and start streaming.
+
+            Sound quality is good too, however a TV can produce only that much sound as per the space available. So I supplemented it with Bose soundbar 500 and bose bass module 500. Addition of these 2 products made the cinematic experience even better.
+
+            =============================================================================================================
+
+            Prasad
+            2.0 out of 5 stars:Limited apps and won't support Dolby Atmos.
+            6 November 2019
+            Samsung has already mentioned all pros about product, so I will share challenges with this TV
+
+            I am using Samsung QLED 55 inch from past 10 months.
+
+            1. Limited apps on it's app store. Samsung TV runs on Tizen os which is developed by them & hence has limited apps
+            2. Samsung TV won't support Dolby Atmos, I purchased 4k TV to experience best cinema experiance, Recently I purchased Dolby Atmos sound System & was shocked to see, no support for Dolby Atmos on Samsung TV.
+
+            I do not understand premium offering from Samsung is far behind LG, OnePlus in this regards.
+
+            Please considure above points before making buying decision.
+
+            =============================================================================================================
+
+            4.0 out of 5 stars:Proud owner of this beauty
+            26 August 2019
+            Style: with No Cost EMI/Additional Exchange OffersColour: Aura GlowVerified Purchase
+            Very initial reviews after having my hands on this beauty for just 24 hours
+
+            Shifting from One plus 3 to note 10 seems an drastic change in terms of display, camera quality and design
+
+            Simply elegant, classy, awesome ..M simply loving dis beauty
+
+            But I feel people searching for long lasting battery would be disappointed as I had to charge twice in whole day and draining seems also fast
+
+            Editing after 15 days of Usage- There are multiple power saving options available in the device and if you do normal usage of the phone limited to surfing, Chatting, Phone/SMS, Social Media Stuff and lil bit of video streaming and gaming..It would surely last for d day
+
+            Even fast charger is not as fast as OP3..But apart from that it's amazing
+
+            I use dis for simple day to day stuff with social media surfing to listening music and watching videos..No high end gaming stuff for me so perfectly suits my need
+
+            This beauty is loaded with hell lot of Amazing functionalities..still exploring..Get this now and join d wagon
+
+            Special Note:
+
+            0 stars to Amazon for delivery...Whole process from ordering to delivery was really bizarre cumbersome and mental torture..I would suggest you guys to order it from other sellers coz Amazon people had made my life hell in d whole journey
+            P.S- Coming from an 3 years loyal customer of Amazon with regular prime subscription since inception..but this time truly disappointed.
+
+            Nothing biased in dis review..just put up to help d consumers get perspective about this device coz spending 70k for an device brings aggressive comparisons and in depth reviews
+
+            But I would suggest go ahead if battery isn't an issue for u..One star less for battery and heating issues
+
+            I loved d camera and its quality..some amazing clicks it takes (Have uploaded few to get u guys have an idea)
+
+            And yes go for d Aura glow color hands down..It will make u glow 😉☺
+
+            I hope dis would be of some help to you guys who are in doubt to invest 70k for this device
+
+        </p>
+    </div>
+</body>
+</html>
